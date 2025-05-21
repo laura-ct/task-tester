@@ -9,6 +9,10 @@ def test_reverse_empty_string():
     """Test reversing an empty string."""
     assert reverse_string("") == ""
 
+def test_reverse_single_character():
+    """Test reversing a single character string."""
+    assert reverse_string("a") == "a"
+
 def test_reverse_palindrome():
     """Test reversing a palindrome string."""
     assert reverse_string("racecar") == "racecar"
