@@ -1,4 +1,4 @@
-def reverse_string(input_string):
+def reverse_string(input_string: str) -> str:
     """
     Reverse the given input string manually, without using slice notation or reverse().
 
@@ -14,6 +14,10 @@ def reverse_string(input_string):
     # Check if input is a string
     if not isinstance(input_string, str):
         raise TypeError("Input must be a string")
+    
+    # Handle empty string case
+    if not input_string:
+        return ""
     
     # Convert string to list of characters
     chars = list(input_string)

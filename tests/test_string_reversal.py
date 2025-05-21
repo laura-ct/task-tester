@@ -4,10 +4,15 @@ from src.string_reversal import reverse_string
 def test_reverse_standard_string():
     """Test reversing a standard string."""
     assert reverse_string("hello") == "olleh"
+    assert reverse_string("python") == "nohtyp"
 
 def test_reverse_empty_string():
     """Test reversing an empty string."""
     assert reverse_string("") == ""
+
+def test_reverse_single_char_string():
+    """Test reversing a single character string."""
+    assert reverse_string("a") == "a"
 
 def test_reverse_palindrome():
     """Test reversing a palindrome string."""
